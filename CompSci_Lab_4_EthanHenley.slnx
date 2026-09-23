@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CompSci_Lab_4_EthanHenley/CompSci_Lab_4_EthanHenley.vcxproj" />
+</Solution>
