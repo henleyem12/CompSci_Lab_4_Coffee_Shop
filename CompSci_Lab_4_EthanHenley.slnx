@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CompSci_Lab_4_EthanHenley/CompSci_Lab_4_EthanHenley.vcxproj" />
+  <Project Path="CompSci_Lab_4_EthanHenley/CompSci_Lab_4_EthanHenley.vcxproj" Id="b8bb63e3-076a-4914-b32b-b71bb9b7fcbe" />
 </Solution>
