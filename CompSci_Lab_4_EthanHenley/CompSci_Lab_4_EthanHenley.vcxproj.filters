@@ -18,8 +18,5 @@
     <ClCompile Include="CompSci_Lab_4_EthanHenley.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_4_Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

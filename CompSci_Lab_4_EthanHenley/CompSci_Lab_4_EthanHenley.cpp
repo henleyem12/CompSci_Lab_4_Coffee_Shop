@@ -13,7 +13,9 @@ int main() {
 	int quantity;
 	double unitPrice;
 	char memberInput;
+	bool isMember = false;
 
+	// 1. Get information from the User
 	cout << "Enter food name: ";
 	getline(cin, foodName);
 
@@ -38,7 +40,22 @@ int main() {
 
 	double total = subtotal - discount;
 
-	cout << "/n--- RECIEPT ---" << endl;
+	// clear the input before using getline
+	cin.ignore();
+
+	string cashierNotes;
+	cout << "Enter cashier notes: ";
+	getline(cin, cashierNotes);
+
+	// 2. Calculations
+
+	// 3. Format the Receipt
+	cout << "\n\n==================================\n";
+	cout << "             STORE RECEIPT        \n";
+	cout << "======================================\n";
+
+
+	cout << "\n--- RECIEPT ---" << endl;
 
 	// Force money format to 2 decimal places
 	cout << fixed << setprecision(2);
@@ -46,15 +63,26 @@ int main() {
 	cout << left << setw(15) << "Item:" << right << setw(10) << foodName << endl;
 	cout << left << setw(15) << "Quantity:" << right << setw(10) << quantity << endl;
 	cout << left << setw(15) << "Unit Price:" << right << setw(10) << unitPrice << endl;
-	cout << "---------------------------/n";
+	cout << "----------------------------------------\n";
 	cout << left << setw(15) << "Subtotal:" << right << setw(10) << subtotal << endl;
 
 	if (discount > 0) {
-		cout << left << setw(15) << "Discount:" << right << setw(10) << discount << endl;
+		cout << left << setw(15) << "Member Discount (10%):" << right << setw(10) << discount << endl;
 	}
 
-	cout << left << setw(15) << "Total:" << right << setw(10) << total << endl;
-	cout << "---------------------------\n";
+	cout << left << setw(15) << "Final Total:" << right << setw(23) << total << endl;
+	cout << "----------------------------------------\n";
+	cout << left << setw(15) << "Notes: " << right << setw(23) << cashierNotes << endl;
+	cout << "=========================================\n";
+
+	// 4. Inventory Audit table (around the bottom-ish)
+	cout << "\n----------------------------------------------\n";
+	cout << "          INVENTORY AUDIT TABLE                \n";
+	cout << "-----------------------------------------------\n";
+	cout << left << setw(12) << "Code" << setw(18) << "Item Name" << right << setw(10) << "Stock" << endl;
+	cout << "------------------------------------------------\n";
+	cout << left << setw(12) << itemCode << setw(18) << foodName << right << setw(10) << quantity << endl;
+	cout << "=================================================\n";
 
 	return 0;
 }
