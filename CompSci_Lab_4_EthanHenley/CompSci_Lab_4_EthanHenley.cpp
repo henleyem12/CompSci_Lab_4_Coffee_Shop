@@ -2,10 +2,61 @@
 //
 
 #include <iostream>
+#include <string>
+#include <iomanip>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+int main() {
+	string foodName;
+	char itemCode;
+	int quantity;
+	double unitPrice;
+	char memberInput;
+
+	cout << "Enter food name: ";
+	getline(cin, foodName);
+
+	cout << "Enter item code (single character): ";
+	cin >> itemCode;
+
+	cout << "Enter quantity: ";
+	cin >> quantity;
+
+	cout << "Enter unit price: ";
+	cin >> unitPrice;
+
+	cout << "Are you a member? (y/n): ";
+	cin >> memberInput;
+
+	double subtotal = quantity * unitPrice;
+	double discount = 0.0;
+
+	if (memberInput == 'y' || memberInput == 'Y') {
+		discount = subtotal * 0.10; // 10% discount for members
+	}
+
+	double total = subtotal - discount;
+
+	cout << "/n--- RECIEPT ---" << endl;
+
+	// Force money format to 2 decimal places
+	cout << fixed << setprecision(2);
+
+	cout << left << setw(15) << "Item:" << right << setw(10) << foodName << endl;
+	cout << left << setw(15) << "Quantity:" << right << setw(10) << quantity << endl;
+	cout << left << setw(15) << "Unit Price:" << right << setw(10) << unitPrice << endl;
+	cout << "---------------------------/n";
+	cout << left << setw(15) << "Subtotal:" << right << setw(10) << subtotal << endl;
+
+	if (discount > 0) {
+		cout << left << setw(15) << "Discount:" << right << setw(10) << discount << endl;
+	}
+
+	cout << left << setw(15) << "Total:" << right << setw(10) << total << endl;
+	cout << "---------------------------\n";
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
