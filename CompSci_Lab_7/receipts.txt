@@ -1,0 +1,11 @@
+
+========== STORE RECEIPT ==========
+Customer: k
+Bacon Cheeseburger (s) x1 @ $6.95 = $6.95
+French Fries (m) x1 @ $3.45 = $3.45
+Subtotal: $10.40
+Final total: $10.40
+Notes: 
+Loyalty Points Earned: 3
+Points Display: ***
+===================================

@@ -1,0 +1,12 @@
+Bacon Cheeseburger
+6.95
+7.45
+8.95
+Loaded Cheesy Fries
+5.45
+6.45
+7.45
+Chicken Tenders
+6.00
+7.50
+9.00

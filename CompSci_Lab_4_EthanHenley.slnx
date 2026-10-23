@@ -4,4 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="CompSci_Lab_4_EthanHenley/CompSci_Lab_4_EthanHenley.vcxproj" Id="b8bb63e3-076a-4914-b32b-b71bb9b7fcbe" />
+  <Project Path="CompSci_Lab_7/CompSci_Lab_7.vcxproj" Id="359517d6-f03e-46d2-8ff0-501f5c26af16" />
 </Solution>
