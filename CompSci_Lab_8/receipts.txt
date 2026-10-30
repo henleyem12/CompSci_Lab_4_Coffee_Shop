@@ -1,0 +1,10 @@
+
+========== STORE RECEIPT ==========
+Customer: kailey
+Bacon Cheeseburger (s) x1 @ $6.95 = $6.95
+Subtotal: $6.95
+Final total: $6.95
+Notes: 
+Loyalty Points Earned: 2
+Points Display: **
+===================================

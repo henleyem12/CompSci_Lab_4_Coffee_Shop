@@ -1,0 +1,7 @@
+DAILY INVENTORY
+Item                     Start     Change    End
+Bacon Cheeseburger       50        -1        49
+Loaded Cheesy Fries      50        0         50
+Chicken Sandwich         50        0         50
+Chicken Nuggets          50        0         50
+French Fries             50        0         50
